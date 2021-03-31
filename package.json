@@ -1,0 +1,25 @@
+{
+  "name": "tmp-db-problem",
+  "version": "1.0.0",
+  "description": "Tiny demonstration of Digital Bazaar library problem",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inrupt/tmp-db-problem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/inrupt/tmp-db-problem/issues"
+  },
+  "homepage": "https://github.com/inrupt/tmp-db-problem#readme",
+  "dependencies": {
+    "@digitalbazaar/ed25519-verification-key-2020": "^2.0.0"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
+  }
+}
