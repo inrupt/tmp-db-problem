@@ -53,3 +53,26 @@ npm ERR! A complete log of this run can be found in:
 npm ERR!     /home/pmcb55/.npm/_logs/2021-03-31T08_55_53_435Z-debug.log
 [tmp-db-problem]$
 ```
+
+But adding Mocha, and the very same test works fine:
+```script 
+[tmp-db-problem]$ npm run test-mocha simple.test.js
+
+> tmp-db-problem@1.0.0 test-mocha
+> mocha --reporter spec "simple.test.js"
+
+
+
+  verificationKey
+Key: [{
+  "type": "Ed25519VerificationKey2020",
+  "publicKeyMultibase": "z3TMsyrJb16wpdkBGQNSkyz9FWFzW3wbygkGMM7REfoir",
+  "privateKeyMultibase": "z3yWj4X7BwTuQ8NU1KRFHFCWMgFPaohTR8kJ2S1dwvkPFfFYv3E3FwW72uQQgE94M1t3mtEXBRDU6hd4GpunXZbT8"
+}]
+    ✓ generates a key
+
+
+  1 passing (7ms)
+
+[tmp-db-problem]$
+```
